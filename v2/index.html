@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>console.time("app-load-time")</script>>
+    <script>
+        console.time("app-load-time");
+        window.onload = ()=>{
+            console.timeEnd("app-load-time")
+        }
+    </script>
+    <script>
+        let appdata = {
+            "name": "Test App",
+            "icon": "asset/icon.png"
+        }
+    </script>
     <script src="./Quartz/setup.js"></script>
 
     <meta charset="UTF-8">
@@ -12,23 +23,18 @@
 </head>
 <body>
     <div id="appBase">Loading App...</div>
-    <div>
-        <script defer src="./Quartz/quartz.js"></script>
-    </div>
-    <div>
-        <script defer src="./Quartz/API/colors.js"></script>
-        <script defer src="./Quartz/API/web.js"></script>
-    </div>
-    <div>
-        <script defer src="./Quartz/UI/raw.js"></script>
-        <script defer src="./Quartz/UI/text.js"></script>
-        <script defer src="./Quartz/UI/container.js"></script>        
-        <script defer src="./Quartz/UI/button.js"></script>
-        <script defer src="./Quartz/UI/card.js"></script>
-    </div>
-    <div>
-        <script defer src="./app/main.js"></script>
-    </div>
-    <script>console.timeEnd("app-load-time")</script>>
+    
+    <script defer src="./Quartz/quartz.js"></script>
+    
+    <script defer src="./Quartz/API/colors.js"></script>
+    <script defer src="./Quartz/API/web.js"></script>
+    
+    <script defer src="./Quartz/UI/raw.js"></script>
+    <script defer src="./Quartz/UI/text.js"></script>
+    <script defer src="./Quartz/UI/container.js"></script>        
+    <script defer src="./Quartz/UI/button.js"></script>
+    <script defer src="./Quartz/UI/card.js"></script>
+
+    <script defer src="./app/main.js"></script>
 </body>
 </html>
