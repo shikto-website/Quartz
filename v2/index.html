@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>console.time("app-load-time")</script>>
+    <script src="./Quartz/setup.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Quartz/style.css">
+</head>
+<body>
+    <div id="appBase">Loading App...</div>
+    <div>
+        <script defer src="Quartz/quartz.js"></script>
+    </div>
+    <div>
+        <script defer src="Quartz/API/colors.js"></script>
+        <script defer src="Quartz/API/web.js"></script>
+    </div>
+    <div>
+        <script defer src="Quartz/UI/raw.js"></script>
+        <script defer src="Quartz/UI/text.js"></script>
+        <script defer src="Quartz/UI/container.js"></script>        
+        <script defer src="Quartz/UI/button.js"></script>
+        <script defer src="Quartz/UI/card.js"></script>
+    </div>
+    <div>
+        <script defer src="app/main.js"></script>
+    </div>
+    <script>console.timeEnd("app-load-time")</script>>
+</body>
+</html>
