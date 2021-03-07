@@ -93,7 +93,6 @@ var Component = {
     },
 
     CreateRaw(tag, attr, child){
-        console.log("attr", attr)
         let e;
         if(attr.id){
             let eID = document.getElementById(attr.id);
