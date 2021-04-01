@@ -1,0 +1,36 @@
+.animation-elevate{    
+  box-shadow: 0px 0.5px 2px 0px #00000070;
+}
+.animation-elevate:hover{
+    box-shadow: 0px 0.5px 3.5px 0.25px #00000070;
+}
+.animation-elevate:active{
+    box-shadow: 0px 2px 5px 0.5px #00000070;
+}
+
+.animation-ripple{
+    position: relative;
+    overflow: hidden;
+    transition: background 400ms;
+}
+.animation-ripple-dark span.ripple{    
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.animation-smoothWidth{
+    transition: height 1s;
+}

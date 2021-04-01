@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("MaterialIcon/material_icon.woff2") format('woff2');
+}
+
+div{ 
+  
+  box-sizing: border-box;
+}
+
+input{
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.textbox{
+  border-radius: 5px;
+  border: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-color: #EEEEEE;
+  box-sizing: border-box;
+}
+
+#app-base{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.button{
+  position: relative;
+  height:fit-content;
+  border: 0;
+  margin: 10px;
+  padding: 10px 15px 10px;
+  background-color: #2196F3;
+  color: white;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.15s;
+  flex-shrink: 0;
+}
+
+.image{
+  flex: 1;
+  max-width: 100%;
+}
+
+.paper{
+  background-color: white;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 1px;
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+  word-break: break-all;
+}
+
+.card{
+  box-shadow: 0px 1px 3px 0.5px #00000070;
+  border-radius: 10px;
+}
+
+.avatar{
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.avatar_button button{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: none;
+}
+
+.circle{
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.square{
+  overflow: hidden;
+}
+
+.center-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.flexible-box{
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.strech-box{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-items: stretch;
+}
+
+.column{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.row{  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.scroll-v{
+  overflow: scroll;
+}
+
+.scroll-h{
+  overflow-y: auto;
+}
+
